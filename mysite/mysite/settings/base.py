@@ -158,3 +158,15 @@ WAGTAILSEARCH_BACKENDS = {"default": {"BACKEND": "wagtail.search.backends.databa
 # Base URL to use when referring to full URLs within the Wagtail admin backend -
 # e.g. in notification emails. Don't include '/admin' or a trailing slash
 WAGTAILADMIN_BASE_URL = "http://example.com"
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
+}
+
+REDDIT_URL = 'https://www.reddit.com/api/v1/'
+REDDIT_TOKEN = os.environ['REDDIT_OAUTH2_TOKEN']
+REDDIT_CLIENT_ID = os.environ['REDDIT_CLIENT_ID']
+REDDIT_CLIENT_SECRET = os.environ['REDDIT_CLIENT_SECRET']
+REDDIT_USER = os.environ['REDDIT_USER']
