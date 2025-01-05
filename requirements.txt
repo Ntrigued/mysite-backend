@@ -1,0 +1,4 @@
+setuptools
+django==5.0.0
+djangorestframework==3.15.2
+djangorestframework-simplejwt[crypto]==5.2.2
